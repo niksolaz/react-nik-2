@@ -1,3 +1,9 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* Aggiungi altre importazioni CSS se necessario */
+
 .App {
   text-align: center;
 }
@@ -14,14 +20,80 @@
 }
 
 .App-header {
+  background-color: #384e79;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.App-header button {
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.App-header button:hover {
+  color:#84a6eb;
+}
+
+.App-scrollup {
+  background-color: #78839a;
+  position: fixed;
+  top: 90%;
+  right: 1%;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  color:white;
+}
+
+.App-scrollup:hover {
+  background-color: #384e79;
+}
+
+.App-footer {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+}
+
+.App-main {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
   color: white;
+}
+.App-about {
+  background-color: #0b2f76;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: rgb(199, 195, 195);
+}
+.App-portfolio {
+  background-color: #0c9bbf;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: rgb(199, 195, 195);
 }
 
 .App-link {
