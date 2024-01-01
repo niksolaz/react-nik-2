@@ -5,7 +5,7 @@ import Main from './components/Main/index'
 import About from './components/About/index'
 import Portfolio from './components/Portfolio/index'
 import Footer from './components/Footer/index'
-import './App.css';
+
 
 function App() {
   return (
