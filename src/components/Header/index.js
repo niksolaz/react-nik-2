@@ -4,7 +4,7 @@ import React from 'react';
 function Header() {
   return (
     <>
-      <header className="bg-blue-900 min-h-[10vh] flex items-center justify-end text-gray-300 text-sm font-semibold px-5">
+      <header className="bg-blue-900 min-h-[10vh] flex items-center justify-end border-b border-blue-700 text-gray-300 text-sm font-semibold px-5">
         <button className="uppercase hover:text-blue-300 p-4">
           <a href="#main">Main</a>
         </button>

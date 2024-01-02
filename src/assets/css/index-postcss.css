@@ -269,7 +269,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
+  color: #9fa6b2; /* 2 */
 }
 /*
 Set the default cursor for buttons.
@@ -337,7 +337,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(11 47 118 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -386,7 +386,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(11 47 118 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -410,27 +410,100 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.fixed {
+  position: fixed;
+}
+.bottom-\[50\%\] {
+  bottom: 50%;
+}
+.right-8 {
+  right: 2rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex {
+  display: flex;
+}
+.h-4 {
+  height: 1rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+.min-h-\[10vh\] {
+  min-height: 10vh;
+}
+.w-4 {
+  width: 1rem;
+}
+.w-6 {
+  width: 1.5rem;
+}
+.resize {
+  resize: both;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-blue-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(43 62 92 / var(--tw-border-opacity));
+}
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(109 170 255 / var(--tw-bg-opacity));
+}
 .bg-blue-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(11 47 118 / var(--tw-bg-opacity));
 }
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 30 43 / var(--tw-bg-opacity));
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.p-4 {
+  padding: 1rem;
 }
-.font-bold {
-  font-weight: 700;
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
-.underline {
-  text-decoration-line: underline;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(210 214 220 / var(--tw-text-opacity));
 }
 /* Aggiungi altre importazioni CSS se necessario */
 
-/*
 
 .App {
   text-align: center;
@@ -447,41 +520,6 @@ video {
   }
 }
 
-.App-header {
-  background-color: #384e79;
-  min-height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding-right: 20px;
-  font-size: 14px;
-  color: white;
-}
-
-.App-header button {
-  padding-right: 20px;
-  font-weight: bold;
-}
-
-.App-header button:hover {
-  color:#84a6eb;
-}
-
-.App-scrollup {
-  background-color: #78839a;
-  position: fixed;
-  top: 90%;
-  right: 1%;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  color:white;
-}
-
-.App-scrollup:hover {
-  background-color: #384e79;
-}
-
 .App-footer {
   background-color: #282c34;
   min-height: 10vh;
@@ -491,37 +529,6 @@ video {
   justify-content: center;
   font-size: 14px;
   color: white;
-}
-
-.App-main {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: white;
-}
-.App-about {
-  background-color: #0b2f76;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: rgb(199, 195, 195);
-}
-.App-portfolio {
-  background-color: #0c9bbf;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: rgb(199, 195, 195);
 }
 
 .App-link {
@@ -536,4 +543,19 @@ video {
     transform: rotate(360deg);
   }
 }
-*/
+
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:text-blue-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(169 206 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 30 43 / var(--tw-text-opacity));
+}
+

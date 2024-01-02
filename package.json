@@ -13,7 +13,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "postcss src/index.css -o src/index-postcss.css && react-scripts start",
+    "start": "postcss src/assets/css/index.css -o src/assets/css/index-postcss.css && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
