@@ -1,16 +1,20 @@
 import { useState, useEffect } from 'react';
 
-const useHeight = () => {
-    const [height, setHeight] = useState(window.innerHeight);
+const useHeight = (actualHeight) => {
+    const [height, setHeight] = useState(actualHeight);
 
     useEffect(() => {
-        const h = window.onscroll = () => window.scrollY;
-        const handleResize = () => setHeight(h());
+        const handleScroll = () => {
+            // Calcola l'altezza in base alla posizione dello scroll
+            // Qui puoi personalizzare la logica in base alle tue esigenze
+            const newHeight = actualHeight + window.scrollY / 5;
+            
+            setHeight(newHeight);
+        };
+        window.addEventListener('scroll', handleScroll);
 
-        window.addEventListener('resize', handleResize);
-
-        // Cleanup the event listener on component unmount
-        return () => window.removeEventListener('resize', handleResize);
+        // Cleanup dell'event listener alla smontaggio del componente
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return height;
