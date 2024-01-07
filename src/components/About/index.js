@@ -1,10 +1,11 @@
 import React from 'react';
 
-function About() {
+function About(prop) {
   return (
     <>
       <main className="bg-blue-500 min-h-[100vh] flex flex-col items-center justify-center text-sm text-gray-300">
-        ABOUT
+        <h2 className="text-4xl font-bold">{prop.label}</h2>
+        <div>{prop.description}</div>
       </main>
     </>
   );
