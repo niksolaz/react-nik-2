@@ -34,6 +34,7 @@ function App() {
       id: "main",
       props: {
         label: "Hi, my name is Nicola Solazzo",
+        description: "I'm a Full Stack Developer, I'm 47 years old and I live in Italy. I'm a very motivated person and I love",
       }
     },
     {
@@ -86,6 +87,7 @@ function App() {
               label={item.props.label} 
               description={item.props.description} 
               lists={item.props.lists} 
+              icon={item.props.icon}
               />
             }
           </div>
