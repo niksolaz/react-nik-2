@@ -14,13 +14,13 @@ function App() {
   const height = useHeight(695);
   useEffect(() => {
     if (height > 696 && height < 820) {
-      seColor('shadow shadow-cyan-500 bg-gradient-to-b from-cyan-500 to-blue-500')
+      seColor('shadow shadow-blue-500 bg-gradient-to-b from-blue-500 to-blue-600')
     } else if (height >= 820 && height < 950) {
-      seColor('shadow shadow-blue-500 bg-gradient-to-b from-blue-500 to-indigo-500')
+      seColor('shadow shadow-blue-600 bg-gradient-to-b from-blue-600 to-blue-700')
     } else if (height >= 950 && height < 1090) {
-      seColor('shadow shadow-indigo-500 bg-gradient-to-b from-indigo-500 to-fuchsia-500')
+      seColor('shadow shadow-blue-700 bg-gradient-to-b from-blue-700 to-blue-800')
     } else if (height >= 1090) {
-      seColor('shadow shadow-fuchsia-500 bg-gradient-to-b from-fuchsia-500 to-pink-500')
+      seColor('shadow shadow-blue-800 bg-gradient-to-b from-blue-800 to-blue-900')
     } else {
       seColor('shadow shadow-cyan-500')
     }
@@ -49,7 +49,7 @@ function App() {
       name: Main,
       id: "main",
       props: {
-        backGround: "bg-gradient-to-b from-cyan-500 to-blue-500",
+        backGround: "bg-gradient-to-b from-blue-500 to-blue-600",
         label: "Hi, my name is Nicola Solazzo",
         description: "I'm a Full Stack Developer, I'm 47 years old and I live in Italy. I'm a very motivated person and I love",
       }
@@ -58,16 +58,16 @@ function App() {
       name: About,
       id: "about",
       props: {
-        backGround: "bg-gradient-to-b from-blue-500 to-indigo-500",
+        backGround: "bg-gradient-to-b from-blue-600 to-blue-700",
         label: "About me",
-        description: "I'm a Full Stack Developer, I'm 47 years old and I live in Italy. I'm a very motivated person and I love"
+        description: "Lorem ipsum dolor sit amet vehicula integer tempor eros iaculis vel posuere libero ultrices nascetur conubia sodales consectetur hac egestas ligula letius vivamus suspendisse orci molestie urna nisl amet aptent id fringilla cras enim dictumst magnis finibus lorem tristique gravida parturient leo volutpat malesuada consectetuer pellentesque eleifend potenti mattis velit adipiscing efficitur hendrerit si sollicitudin natoque dolor at luctus congue blandit viverra faucibus ex himenaeos ut ac nunc felis et arcu rutrum euismod ultricies habitant pharetra nisi montes platea interdum neque duis quisque cubilia vulputate fames accumsan bibendum odio sociosqu maecenas netus maximus elementum sem nibh nec turpis habitasse"
       }
     },
     {
       name: Portfolio,
       id: "portfolio",
       props: {
-        backGround: "bg-gradient-to-b from-indigo-500 to-fuchsia-500",
+        backGround: "bg-gradient-to-b from-blue-700 to-blue-800",
         lists: [
           {
             title: "Portfolio 1",
@@ -91,7 +91,7 @@ function App() {
       name: Contact,
       id: "contact",
       props: {
-        backGround: "bg-gradient-to-b from-fuchsia-500 to-pink-500",
+        backGround: "bg-gradient-to-b from-blue-800 to-blue-900",
       }
     }
   ]
